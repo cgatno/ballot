@@ -8,7 +8,7 @@ if (BABEL_ENV === "umd") {
 }
 
 if (process.env.NODE_ENV === "production") {
-  plugins.push("dev-expression", "transform-react-remove-prop-types");
+  plugins.push("dev-expression");
 }
 
 module.exports = {
@@ -21,7 +21,8 @@ module.exports = {
       }
     ],
     "stage-1",
-    "react"
+    "react",
+    "flow"
   ],
   plugins: plugins
 };
