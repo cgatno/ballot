@@ -8,3 +8,6 @@ node_modules/
 
 # Distributable files
 build/
+
+# Just a sparse React app I use for local testing
+test-app/
