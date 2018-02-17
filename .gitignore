@@ -1,0 +1,10 @@
+# Node modules
+# Restore with `npm install`
+node_modules/
+
+# VS Code workspace settings
+# If you're curious about these, just ask! :)
+.vscode/
+
+# Distributable files
+build/

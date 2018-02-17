@@ -1,0 +1,48 @@
+{
+  "name": "ballot",
+  "version": "0.0.1",
+  "description":
+    "Opinionated but highly customizable survey framework for creating questionnaires in React.",
+  "main": "build/cjs/index.js",
+  "module": "build/es/index.js",
+  "files": ["build"],
+  "scripts": {
+    "format": "prettier --write modules/**/*.js",
+    "lint": "eslint modules",
+    "build": "node ./tools/build.js",
+    "prepublishOnly": "node ./tools/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["survey", "react", "poll", "questionnaire", "study"],
+  "repository": "cgatno/ballot",
+  "author":
+    "Christian Gaetano <hello@christiangaetano.com> (https://christiangaetano.com)",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=15"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-dev-expression": "^0.2.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^4.18.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.6.1",
+    "gzip-size": "^4.1.0",
+    "prettier": "^1.10.2",
+    "pretty-bytes": "^4.0.2",
+    "react": "^16.2.0",
+    "rollup": "^0.56.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-node-resolve": "^3.0.3",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-uglify": "^3.0.0"
+  },
+  "dependencies": {}
+}
