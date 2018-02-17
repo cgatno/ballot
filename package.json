@@ -1,6 +1,6 @@
 {
   "name": "ballot",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description":
     "Opinionated but highly customizable survey framework for creating questionnaires in React.",
   "main": "build/cjs/index.js",
