@@ -1,11 +1,12 @@
 {
   "name": "ballot",
   "version": "0.0.0",
-  "description":
-    "Opinionated but highly customizable survey framework for creating questionnaires in React.",
+  "description": "Opinionated but highly customizable survey framework for creating questionnaires in React.",
   "main": "build/cjs/index.js",
   "module": "build/es/index.js",
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "scripts": {
     "format": "prettier --write modules/**/*.js",
     "lint": "eslint modules",
@@ -13,10 +14,15 @@
     "prepublishOnly": "node ./tools/build.js",
     "flow": "flow"
   },
-  "keywords": ["survey", "react", "poll", "questionnaire", "study"],
+  "keywords": [
+    "survey",
+    "react",
+    "poll",
+    "questionnaire",
+    "study"
+  ],
   "repository": "cgatno/ballot",
-  "author":
-    "Christian Gaetano <hello@christiangaetano.com> (https://christiangaetano.com)",
+  "author": "Christian Gaetano <hello@christiangaetano.com> (https://christiangaetano.com)",
   "license": "MIT",
   "peerDependencies": {
     "react": ">=15"
