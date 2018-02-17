@@ -1,1 +1,1 @@
-export Ballot from "./Ballot";
+export Ticket from "./Ticket";

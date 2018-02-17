@@ -1,7 +1,7 @@
 const BABEL_ENV = process.env.BABEL_ENV;
 const building = BABEL_ENV != undefined && BABEL_ENV !== "cjs";
 
-const plugins = [];
+const plugins = ["babel-plugin-styled-components"];
 
 if (BABEL_ENV === "umd") {
   plugins.push("external-helpers");
