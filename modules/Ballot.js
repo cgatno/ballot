@@ -3,12 +3,12 @@
 import React from "react";
 
 class Ballot extends React.Component<{}> {
-  hallo: string;
+  welcome: string;
 
   constructor(props: {}) {
     super(props);
 
-    this.hallo = "23";
+    this.welcome = "More coming soon! 🙂";
   }
 }
 
