@@ -1,3 +1,4 @@
+export ChooseAny from "./ChooseAny";
 export ChooseOne from "./ChooseOne";
 export Choice from "./Choice";
 export Question from "./Question";
