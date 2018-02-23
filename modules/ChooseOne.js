@@ -9,18 +9,11 @@
  * TODO: Make options use their own specialized components
  */
 import * as React from "react";
-import styled from "styled-components";
 import Question, { Style } from "./Question";
 import Choice from "./Choice";
 
 // Containing div - use base Props from Question since they define `current` boolean
 const ChooseOneWrapper = Style;
-
-// Styling for each individual option (label + radio)
-const Option = styled.label`
-  display: inline-block;
-  margin: 5px 10px;
-`;
 
 // Props specific to this type of Question
 type ChooseOneProps = {
