@@ -11,6 +11,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import Question, { Style } from "./Question";
+import Choice from "./Choice";
 
 // Containing div - use base Props from Question since they define `current` boolean
 const ChooseOneWrapper = Style;
@@ -24,7 +25,7 @@ const Option = styled.label`
 // Props specific to this type of Question
 type ChooseOneProps = {
   groupName: string, // defines `name` property for radio inputs
-  children: React.ChildrenArray<React.Element<HTMLSpanElement>>,
+  children: React.ChildrenArray<React.Element<typeof Choice>>,
 };
 
 class ChooseOne extends Question<ChooseOneProps> {
@@ -35,21 +36,10 @@ class ChooseOne extends Question<ChooseOneProps> {
         {...otherProps}
         tabIndex={tabIndex || "0"} // Allow tab key to cycle through questions
       >
-        {React.Children.map(children, child => (
-          <Option
-            // TODO: Fix automatic ID formatting
-            htmlFor={`${groupName}-${child.props.children.toLowerCase()}`}
-          >
-            <input
-              type="radio"
-              name={groupName}
-              // TODO: Fix automatic ID formatting
-              id={`${groupName}-${child.props.children.toLowerCase()}`}
-              value={child.props.children.toLowerCase()}
-            />
-            {child.props.children}
-          </Option>
-        ))}
+        {React.Children.map(children, child =>
+          // Automatically assign some properties like input type and the name for form grouping
+          React.cloneElement(child, { type: "radio", groupName }),
+        )}
       </ChooseOneWrapper>
     );
   }
