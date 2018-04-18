@@ -17,12 +17,12 @@ module.exports = {
       "env",
       {
         loose: true,
-        modules: building ? false : "commonjs"
-      }
+        modules: building ? false : "commonjs",
+      },
     ],
     "stage-1",
     "react",
-    "flow"
+    "flow",
   ],
-  plugins: plugins
+  plugins: plugins,
 };

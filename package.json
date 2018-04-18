@@ -2,8 +2,8 @@
   "name": "ballot",
   "version": "0.0.1",
   "description": "Opinionated but highly customizable survey framework for creating questionnaires in React.",
-  "main": "build/cjs/index.js",
-  "module": "build/es/index.js",
+  "main": "build/cjs/min/index.js",
+  "module": "build/es/min/index.js",
   "files": [
     "build"
   ],
@@ -31,6 +31,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",
+    "babel-minify": "^0.4.0",
     "babel-plugin-dev-expression": "^0.2.1",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-styled-components": "^1.5.0",
