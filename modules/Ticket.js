@@ -8,13 +8,13 @@
  */
 
 import * as React from "react";
-import styled from "styled-components";
+import styled from "react-emotion";
 import Question from "./Question";
 import ChooseOne from "./ChooseOne";
 
 // Default styles for the outermost form container
 // Use HTML <form> for the semantics and accessibility
-const TicketWrapper = styled.form`
+const TicketWrapper = styled("form")`
   background: #e8e8e8;
   max-width: 960px;
   display: block;

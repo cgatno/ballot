@@ -9,7 +9,7 @@
  */
 
 import * as React from "react";
-import styled from "styled-components";
+import styled from "react-emotion";
 
 // Potential props for a Question
 export type Props = {
@@ -21,7 +21,7 @@ export type Props = {
 };
 
 // Containing div for a Question - style based on current selection
-const QuestionWrapper = styled.div`
+const QuestionWrapper = styled("div")`
   background: ${(props: Props) => (props.current ? "pink" : "transparent")};
   outline: 0;
 

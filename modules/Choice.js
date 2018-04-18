@@ -22,6 +22,7 @@ class Choice extends React.Component<Props> {
           // TODO: More validation to check HTML ID
           id={`${this.props.groupName}-${this.props.value}`}
           value={this.props.value}
+          tabIndex="-1"
         />
         {this.props.text}
       </label>
